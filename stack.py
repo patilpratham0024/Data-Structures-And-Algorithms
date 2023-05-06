@@ -4,12 +4,18 @@ class Stack:
         self.maxSize = maxSize
 
     def isFull(self):
+         """
+        :return: it checks if the stack is full or not
+        """
         if len(self.items) == self.maxSize:
             return True
         else:
             return False
 
     def isEmpty(self):
+         """
+        :return: it checks if the stack is empty or not
+        """
         if self.items == 0:
             return True
         else:
@@ -35,12 +41,18 @@ class Stack:
             return "Stack is Empty!!"
 
     def topOfStack(self):
+         """
+        :return: it returns the top element of a stack
+        """
         if (len(self.items)) != 0:
             return self.items[len(self.items) - 1]
         else:
             return "Stack is Empty!!"
 
     def displayStack(self):
+         """
+        :return: it returns the stack
+        """
         if len(self.items) != 0:
             return self.items
         else:
